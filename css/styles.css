@@ -63,7 +63,7 @@ nav ul li:hover a {
 
 /* Masthead */
 header {
-    background-image: url('./img/img1.jpg');
+    background-image: url('/green-energy/img/img1.jpg');
     background-size: cover;
     position: relative;
     padding: 5rem 0;
@@ -204,6 +204,7 @@ footer {
     body {
         font-size: 1rem;
         line-height: 1.4;
+        background-color: #d6ffd0;
     }
 
     .main-content {
