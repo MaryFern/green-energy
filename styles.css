@@ -1,0 +1,230 @@
+/* 
+Colour Scheme:
+    -Black: #000000
+    -White: #fff
+    -Green: #4d6d10
+    -Green 2: #4d6d10
+    -Light Green: #79b608
+    -Dark Green: #2e3a17
+
+Font Scheme:
+    Nav & Headings:
+        -font-family: 'Arial', sans-serif;
+    Body Text:
+        -font-family: "Poppins", sans-serif;
+*/
+
+/* Import Google Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS: */
+html, body, ul, li, nav, header, main, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile View: */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    background-color: #d6ffd0;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+/* Navbar: */
+nav {
+    background-color: #4d6d10;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+}
+
+nav ul li:hover a {
+    background-color: #2e3a17;
+    color: #ffffff;
+    padding: 2.5rem 2.5rem;
+}
+
+/* Masthead */
+header {
+    background-image: url('../img/img1.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 5rem 0;
+}
+
+.masthead-content {
+    background-color: #2e3a17;
+    padding: 1rem;
+    opacity: 70%;
+}
+
+.heading1 {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Main Content: */
+.main-content {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* Buttons: */
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 1rem 3rem;
+    border: none;
+    background-color: #4d6d10;
+    color: #fff;
+    font-family: "EB Garamond", serif;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.button-container button.active {
+    background-color: #79b608;
+}
+
+.button-container button:hover {
+    background-color: #2e3a17;
+    color: #ffffff;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #4d6d10;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Tablet/Desktop View Styles: */
+@media screen and (min-width: 30rem) {
+    header {
+        background-position: center;
+        padding: 10rem;
+        font-family: "EB Garamond", serif;
+    }
+    
+    .masthead-content {
+        background-color: #2e3a17;
+        padding: 1rem;
+        opacity: 70%;
+    }
+    
+    .heading1 {
+        font-family: "EB Garamond", serif;
+        text-align: center;
+        color: #fff;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    
+    .button-container button {
+        padding: 2rem 3rem;
+        border: none;
+        background-color: #4d6d10;
+        color: #fff;
+        font-family: "EB Garamond", serif;
+        cursor: pointer;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 2rem;
+        font-size: 2rem;
+        font-family: "EB Garamond", serif;
+    }
+
+    nav ul li:hover a {
+        background-color: #2e3a17;
+        color: #ffffff;
+        padding: 2.5rem 2.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .content {
+        flex: 0 0 calc(33.33% - 4rem);
+    }
+}
+
+/* Large Desktop View Styles: */
+@media screen and (min-width: 60rem) {
+    .main-content {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .content {
+        flex: 0 0 calc(50% - 4rem);
+    }
+}
