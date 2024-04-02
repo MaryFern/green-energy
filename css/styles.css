@@ -63,7 +63,7 @@ nav ul li:hover a {
 
 /* Masthead */
 header {
-    background-image: url('./img/img1.jpg');
+    background-image: url('img/img1.jpg');
     background-size: cover;
     position: relative;
     padding: 5rem 0;
